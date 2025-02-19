@@ -1,0 +1,125 @@
+/* =====================================
+   1. Base Variables: Colors and Fonts
+   ===================================== */
+   :root {
+    --main-bg-color: #EDC9FF;   /* Light purple background */
+    --secondary-color: #FED4E7; /* Soft pink secondary color */
+    --accent-color: #F2B79F;    /* Peachy accent color */
+  
+    /* Additional optional variables */
+    --text-color: #333;         /* Default text color */
+    --header-text-color: #fff;  /* Header text color */
+    --font-family-body: 'Roboto', sans-serif;
+    --font-family-title: 'Lobster', cursive;
+  }
+  
+  /* =====================================
+     2. Global Reset & Body
+     ===================================== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family-body);
+    line-height: 1.4;
+  }
+  
+  /* =====================================
+     3. Header Styles
+     ===================================== */
+  .site-header {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .site-header h1 {
+    font-family: var(--font-family-title);
+    color: var(--header-text-color);
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  /* =====================================
+     4. Intro Section
+     ===================================== */
+  .intro-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .intro-section h2 {
+    font-family: var(--font-family-title);
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+  }
+  
+  .intro-section p,
+  .intro-section ul {
+    margin-bottom: 1rem;
+  }
+  
+  /* =====================================
+     5. Movies Section
+     ===================================== */
+  .movies-section {
+    background-color: var(--accent-color);
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .movies-section h2 {
+    font-family: var(--font-family-title);
+    margin-bottom: 30px;
+  }
+  
+  .movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .movie-card {
+    width: 150px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .movie-card p {
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* =====================================
+     6. Responsive Adjustments (Optional)
+     ===================================== */
+  @media (min-width: 768px) {
+    .movie-card {
+      width: 200px;
+    }
+  }
+  
